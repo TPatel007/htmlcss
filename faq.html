@@ -1,0 +1,127 @@
+<!DOCTPE html>
+<html lang="en">
+	<head>
+        <title>Delta college</title>
+        <link href="CSS/main.css"  rel="stylesheet" type="text/css" >
+        <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script><script>
+ $(document).ready(function() {
+ 
+    $('.faq_question').click(function() {
+ 
+        if ($(this).parent().is('.open')){
+            $(this).closest('.faq').find('.faq_answer_container').animate({'height':'0'},500);
+            $(this).closest('.faq').removeClass('open');
+ 
+            }else{
+                var newHeight =$(this).closest('.faq').find('.faq_answer').height() +'px';
+                $(this).closest('.faq').find('.faq_answer_container').animate({'height':newHeight},500);
+                $(this).closest('.faq').addClass('open');
+            }
+ 
+    });
+ 
+});
+</script>
+    </head>
+    <body>
+        <header>
+           <div id="logo"><img src="IMAGES/2000px-Delta_logo.svg.png" width="200px" height="70px" alt="Logo">
+               <div class="firstHeader">Apply&nbsp;&nbsp; Visit &nbsp;&nbsp; Give &nbsp;&nbsp;
+           </div>
+            </div> 
+           <div class="topnav">
+               <div id="navlinks">
+            <a href="index.html">Home</a>
+           <a href="program.html">Programs</a>
+		   <a href="fees.html">Fees</a>
+           <a href="student.html">Student Life</a>
+           <a href="campusLife.html">Campus Services</a>
+          
+           <a href="contact.html">Contact Us</a>
+           <a href="faq.html">FAQ</a></div>
+           </div>
+        </header>
+        <nav>
+        <div class="hero-image">
+        <div class="hero-text">
+        <h1>Find Your Program</h1>
+        <p>Not sure what to take?
+           We Can Help.</p>
+        </div>
+        </div>
+        </nav>
+        <main>
+         <h1>Frequently Asked Questions:</h1>
+         <div class="faq_container">
+              <div class="faq">
+         <div class="faq_question">Q:What’s the difference between a college and a university?</div>
+         <div class="faq_answer_container">
+         <div class="faq_answer">A:Colleges offer only undergraduate degrees while universities offer graduate degrees as well, but the terms are often used interchangeably.</div>
+        </div>        
+        </div>
+             <div class="faq">
+         <div class="faq_question">Q:What is the academic calendar for universities?</div>
+         <div class="faq_answer_container">
+         <div class="faq_answer">A:The academic year usually runs from August through May with breaks for holidays. Most universities use either the semester system (two terms), the quarter system (students attend three out of four total terms), or the trimester system (three terms).</div>
+        </div>        
+        </div>
+              <div class="faq">
+         <div class="faq_question">Q: What are the different types of undergraduate degrees?</div>
+         <div class="faq_answer_container">
+         <div class="faq_answer">A:Associate: a two-year program that either leads to a specific vocation or transitions to a bachelor program. Bachelor: a four or five-year program where students earn credits in a wide variety of courses</div>
+        </div>        
+        </div>
+              <div class="faq">
+         <div class="faq_question">Q:What are the different types of  graduate degrees?</div>
+         <div class="faq_answer_container">
+         <div class="faq_answer">A:Masters: two-year degree providing additional specialization. Doctorate: five to eight-year program certifying the student as a trained research scholar and/or professor.</div>
+        </div>        
+        </div>
+              <div class="faq">
+         <div class="faq_question">Q:Is it possible to take a professional degree program without first earning a bachelor's degree?</div>
+         <div class="faq_answer_container">
+         <div class="faq_answer">A:Yes, but they are highly selective and require a heavy courseload across a total of six years of study.</div>
+        </div>        
+        </div>
+              <div class="faq">
+         <div class="faq_question">Q:Is it possible to obtain a bachelor's degree and a master's degree at the same time?</div>
+         <div class="faq_answer_container">
+         <div class="faq_answer">A:In a joint-degree program, students begin a graduate program in their fourth year of college, earning both degrees upon graduation.</div>
+        </div>        
+        </div>
+              <div class="faq">
+         <div class="faq_question">Q:Can you work while studying?</div>
+         <div class="faq_answer_container">
+         <div class="faq_answer">A:With permission of the International Student Office, international students may work on campus up to 20 hours/week their first year and can apply to work off-campus in subsequent years.</div>
+        </div>        
+        </div>
+              <div class="faq">
+         <div class="faq_question">Q:What is the transfer application process?</div>
+         <div class="faq_answer_container">
+         <div class="faq_answer">A:You must fulfill the requirements of a freshman applicant, as well as any supplemental information required by the transfer institution.</div>
+        </div>        
+        </div>
+              <div class="faq">
+         <div class="faq_question">Q:How can I find out which universities are rated best for a specific academic major?</div>
+         <div class="faq_answer_container">
+         <div class="faq_answer">A:Refer to college and university guides to find which institutions are known for excellence in different fields of study.</div>
+        </div>        
+        </div>
+              <div class="faq">
+         <div class="faq_question">Q:What are the benefits of a liberal arts education?</div>
+         <div class="faq_answer_container">
+         <div class="faq_answer">A:A liberal arts college offers a smaller setting and teaches critical thinking and communication skills necessary in an ever-changing job market.</div>
+        </div>        
+        </div>
+        </div>
+            
+        </main>
+        <br>
+         <footer>
+                Copyright &copy; Delta College 2018
+       </footer>
+    </body>
+</html>
